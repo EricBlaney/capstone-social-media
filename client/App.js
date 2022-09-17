@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import Navbar from './components/Navbar'
-import Routes from './Routes'
-import Footer from './Footer'
+import Navbar from "./components/Navbar";
+import Routes from "./Routes";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Routes />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

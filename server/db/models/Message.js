@@ -6,12 +6,12 @@ const Message = db.define('message', {
         type: Sequelize.STRING,
         allowNull: false
     },
-    createdAt: {
-        get: function(){
-            //not sure if I can put a getter on createdAt but below just add a format for output of date
-            return this.getDataValue('createdAt').toLocaleString('en-US');
-        }
-    }
+    // createdAt: {
+    //     get: function(){
+    //         //not sure if I can put a getter on createdAt but below just add a format for output of date
+    //         return this.getDataValue('createdAt').toLocaleString('en-US');
+    //     }
+    // }
 });
 
 module.exports = Message;
