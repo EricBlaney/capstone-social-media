@@ -16,7 +16,7 @@ import FeedIcon from "@mui/icons-material/Feed";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
 
-const SideMenu = () => {
+const SideMenu = ({ setMode, mode }) => {
   return (
     <Box flex={1} p={1} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
@@ -58,7 +58,11 @@ const SideMenu = () => {
               <ListItemIcon>
                 <ModeNightIcon />
               </ListItemIcon>
-              <Switch></Switch>
+              <Switch
+                onChange={(event) =>
+                  setMode(mode === "light" ? "dark" : "light")
+                }
+              ></Switch>
             </ListItemButton>
           </ListItem>
         </List>
