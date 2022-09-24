@@ -24,7 +24,7 @@ const Search = ({ users }) => {
                 <Link
                   className="links resultItem"
                   key={user.id}
-                  to={`/users/${user.id}`}
+                  to={`/profile/${user.id}`}
                 >
                   <p>{user.username}</p>
                 </Link>
