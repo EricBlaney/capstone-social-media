@@ -60,7 +60,11 @@ const Navbar = ({ handleClick, isLoggedIn, auth }) => {
                   />
                 </Link>
                 <Avatar
-                  sx={{ height: "30px", width: "30px" }}
+                  sx={{
+                    height: "30px",
+                    width: "30px",
+                    border: "1px solid #F5C7A9",
+                  }}
                   src={auth.avatar}
                   onClick={(event) => setOpen(true)}
                 />
